@@ -29,5 +29,6 @@ Route::get('/contact',[WebController::class, 'contact'])->name('contact');
 //admin
 Route::get('/starter',[WebController::class, 'starter'])->name('starter');
 
+
 Auth::routes(['register'=> false, 'reset' => false, 'verify' => false, 'confirm' => false]);
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
