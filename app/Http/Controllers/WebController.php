@@ -48,4 +48,10 @@ class WebController extends Controller
     public function starter(){
         return view('admin.starter');
     }
+    public function dashboard(){
+        return view('admin.dashboard');
+    }
+    public function calendar(){
+        return view('admin.calendar');
+    }
 }

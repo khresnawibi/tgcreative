@@ -28,7 +28,7 @@
     <link href="{{ asset('assets/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
 
     <!-- Template Main CSS File -->
-    <link href="{{ asset('assets/css/style.css')}}" rel="stylesheet">
+    <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
 
     <!-- =======================================================
   * Template Name: Sailor - v4.10.0
@@ -59,18 +59,18 @@
                             <li><a href="{{ route('about') }}">About</a></li>
                             <li><a href="{{ route('team') }}">Team</a></li>
                             <li><a href="{{ route('testimonial') }}">Testimonials</a></li>
-
-
+                        </ul>
                     </li>
-                </ul>
-                </li>
-                <li><a href="{{ route('services') }}">Services</a></li>
-                <li><a href="{{ route('portofolio') }}">Portfolio</a></li>
-                <li><a href="{{ route('pricelist') }}">Price List</a></li>
+                    <li><a href="{{ route('services') }}">Services</a></li>
+                    <li><a href="{{ route('portofolio') }}">Portfolio</a></li>
+                    <li><a href="{{ route('pricelist') }}">Price List</a></li>
 
 
-                <li><a href="{{ route('contact') }}">Contact</a></li>
-                <li><a href="{{ route('login') }}" class="getstarted">Login</a></li>
+                    <li><a href="{{ route('contact') }}">Contact</a></li>
+
+                    @auth
+                    <li><a href="{{ route('user.home') }}" class="getstarted">Admin Page</a></li>
+                    @endauth
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav><!-- .navbar -->
