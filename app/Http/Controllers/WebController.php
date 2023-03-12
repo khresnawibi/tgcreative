@@ -2,13 +2,16 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\ProductCategory;
 use Illuminate\Http\Request;
 
 class WebController extends Controller
 {
     public function index()
     {
-        return view('index');
+        $categories = ProductCategory::all();
+
+        return view('index', compact('categories'));
     }
 
     public function blog()
@@ -31,27 +34,22 @@ class WebController extends Controller
     {
         return view('services');
     }
-    public function portofolio(){
-        return view('portofolio');
+    public function portofolio()
+    {
+        $categories = ProductCategory::all();
+
+        return view('portofolio', compact('categories'));
     }
-    public function pricelist(){
+    public function pricelist()
+    {
         return view('pricelist');
     }
-    public function contact(){
+    public function contact()
+    {
         return view('contact');
     }
-    public function login(){
+    public function login()
+    {
         return view('login');
-    }
-
-    //ADMIN
-    public function starter(){
-        return view('admin.starter');
-    }
-    public function dashboard(){
-        return view('admin.dashboard');
-    }
-    public function calendar(){
-        return view('admin.calendar');
     }
 }
