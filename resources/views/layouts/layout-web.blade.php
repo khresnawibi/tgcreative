@@ -52,24 +52,24 @@
 
             <nav id="navbar" class="navbar">
                 <ul>
-                    <li><a href="{{ route('home') }}" class="active">Home</a></li>
+                    <li><a href="{{ route('home') }}" class="{{ request()->is('/') ? 'active' : '' }}">Home</a></li>
 
-                    <li class="dropdown"><a href="#"><span>About</span> <i class="bi bi-chevron-down"></i></a>
+                    <li class="dropdown"><a href="#"><span class="{{ request()->is('about') || request()->is('team') || request()->is('testimonial') ? 'active' : '' }}">About</span> <i class="bi bi-chevron-down"></i></a>
                         <ul>
                             <li><a href="{{ route('about') }}">About</a></li>
                             <li><a href="{{ route('team') }}">Team</a></li>
                             <li><a href="{{ route('testimonial') }}">Testimonials</a></li>
                         </ul>
                     </li>
-                    <li><a href="{{ route('services') }}">Services</a></li>
-                    <li><a href="{{ route('portofolio') }}">Portfolio</a></li>
-                    <li><a href="{{ route('pricelist') }}">Price List</a></li>
+                    <li><a class="{{ request()->is('services') ? 'active' : '' }}" href="{{ route('services') }}">Services</a></li>
+                    <li><a class="{{ request()->is('portfolio') ? 'active' : '' }}" href="{{ route('portfolio') }}">Portfolio</a></li>
+                    <li><a class="{{ request()->is('pricelist') ? 'active' : '' }}" href="{{ route('pricelist') }}">Price List</a></li>
 
 
-                    <li><a href="{{ route('contact') }}">Contact</a></li>
+                    <li><a class="{{ request()->is('contact') ? 'active' : '' }}" href="{{ route('contact') }}">Contact</a></li>
 
                     @auth
-                    <li><a href="{{ route('user.home') }}" class="getstarted">Admin Page</a></li>
+                    <li><a href="{{ route('user.home') }}" class="getstarted">Dashboard</a></li>
                     @endauth
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
