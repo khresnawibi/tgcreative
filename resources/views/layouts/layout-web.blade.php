@@ -54,19 +54,18 @@
                 <ul>
                     <li><a href="{{ route('home') }}" class="{{ request()->is('/') ? 'active' : '' }}">Home</a></li>
 
-                    <li class="dropdown"><a href="#"><span class="{{ request()->is('about') || request()->is('team') || request()->is('testimonial') ? 'active' : '' }}">About</span> <i class="bi bi-chevron-down"></i></a>
+                    
+
+                    {{-- <li class="dropdown"><a href="#"><span class="{{ request()->is('about') || request()->is('team') || request()->is('testimonial') ? 'active' : '' }}">About</span> <i class="bi bi-chevron-down"></i></a>
                         <ul>
-                            <li><a href="{{ route('about') }}">About</a></li>
                             <li><a href="{{ route('team') }}">Team</a></li>
-                            <li><a href="{{ route('testimonial') }}">Testimonials</a></li>
                         </ul>
-                    </li>
-                    <li><a class="{{ request()->is('services') ? 'active' : '' }}" href="{{ route('services') }}">Services</a></li>
+                    </li> --}}
                     <li><a class="{{ request()->is('portfolio') ? 'active' : '' }}" href="{{ route('portfolio') }}">Portfolio</a></li>
                     <li><a class="{{ request()->is('pricelist') ? 'active' : '' }}" href="{{ route('pricelist') }}">Price List</a></li>
 
 
-                    <li><a class="{{ request()->is('contact') ? 'active' : '' }}" href="{{ route('contact') }}">Contact</a></li>
+                    <li><a class="{{ request()->is('contact') ? 'active' : '' }}" href="{{ route('contact') }}">Location</a></li>
 
                     @auth
                     <li><a href="{{ route('user.home') }}" class="getstarted">Dashboard</a></li>
@@ -94,11 +93,12 @@
                                 <strong>Phone:</strong> +6285733522632<br>
                                 <strong>Email:</strong> tgcreative@driveme.id<br>
                             </p>
-                            <div class="social-links mt-3">
+                            {{-- <div class="social-links mt-3">
                                 <a href="https://www.instagram.com/tgcreative.id/" class="instagram"><i
                                         class="bx bxl-instagram"></i></a>
 
-                            </div>
+                                        
+                            </div> --}}
                         </div>
                     </div>
 
@@ -109,15 +109,6 @@
                             <li><i class="bx bx-chevron-right"></i> <a href="#">VIDEOGRAFI</a></li>
                             <li><i class="bx bx-chevron-right"></i> <a href="#">EDITING</a></li>
                         </ul>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 footer-newsletter">
-                        <h4>MASUKAN/SARAN UNTUK TIM TG CREATIVE</h4>
-                        <p>Mohon isi formulir ini untuk menyampaikan kritik Dan Saran untuk tim kita </p>
-                        <form action="" method="post">
-                            <input type="email" name="email"><input type="submit" value="Submit">
-                        </form>
-
                     </div>
 
                 </div>
@@ -133,7 +124,7 @@
                 <!-- You can delete the links only if you purchased the pro version. -->
                 <!-- Licensing information: https://bootstrapmade.com/license/ -->
                 <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/sailor-free-bootstrap-theme/ -->
-                Designed by <a href="https://bootstrapmade.com/">KHRESNA WIBI.TRi GUNTORO.MOHANDES SANTIKO</a>
+                Designed by <a href="https://bootstrapmade.com/">KHRESNA WIBI PRAYOGO, TRI GUNTORO, MOHANDES SANTIKO</a>
             </div>
         </div>
     </footer><!-- End Footer -->

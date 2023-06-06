@@ -28,7 +28,7 @@
 
           <div class="col-lg-6">
             <div class="member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/team/team-1.jpg" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="assets/img/team/trigun.jpg" class="img-fluid" alt=""></div>
               <div class="member-info">
                 <h4>TRI GUNTORO</h4>
                 <span></span>
@@ -42,7 +42,7 @@
 
           <div class="col-lg-6 mt-4 mt-lg-0">
             <div class="member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/team/team-2.jpg" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="assets/img/team/wibi.jpg" class="img-fluid" alt=""></div>
               <div class="member-info">
                 <h4>KHRESNA WIBI</h4>
                 <span>VIDEOGRAFER</span>
@@ -56,7 +56,7 @@
 
           <div class="col-lg-6 mt-4">
             <div class="member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/team/team-3.jpg" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="assets/img/team/tiko.jpg" class="img-fluid" alt=""></div>
               <div class="member-info">
                 <h4>MOHANDES SANTIKO</h4>
                 <span>EDITOR</span>
